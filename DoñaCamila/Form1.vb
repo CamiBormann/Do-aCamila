@@ -52,7 +52,7 @@ Public Class Form1
             AppExcel.Quit()
             Libro = Nothing
             Hoja = Nothing
-            MsgBox("El archivo seleccionado, no es compatible")
+            MessageBox.Show("El archivo seleccionado, no es compatible", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             BtnCargar.Enabled = True
         End Try
     End Sub
